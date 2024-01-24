@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's Site Complete</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom styles -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .color-span {
+            color: #FF4240;
+        }
+
+        .color-text {
+            color: #424247;
+        }
+    </style>
+
+</head>
+
+<body class="font-manrope mx-5 lg:my-14">
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span
+                            class="color-span">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-base font-normal"><span class="color-span">Home</span></a></li>
+                        <li><a class="text-base font-normal color-text">About</a></li>
+                        <li><a class="text-base font-normal color-text">Pages</a></li>
+                        <li><a class="text-base font-normal color-text">Blog</a></li>
+                        <li><a class="text-base font-normal color-text">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img src="Images/Frame.png" alt="">
+                    <a class="btn text-lg lg:text-xl bg-color-primary text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="md:container md:mx-auto mt-6">
+        <!-- carasoul section -->
+        <section>
+            <div class="carousel max-w-80 lg:max-w-full mx-4 rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+
+        </section>
+
+        <!-- professional hockeys section -->
+        <hr class="divide-y divide-dashed">
+        <section class="text-center my-14">
+            <h1 class="text-4xl font-extrabold mb-6">Professional Hockeys Club </h1>
+            <p class="max-w-72 lg:max-w-2xl mx-auto color-text mb-6">Welcome!!! Here we provide the professionnal help
+                you need
+                for participating in the national levels. We also provide with many other daily facilities like prayer
+                rooms and stuffs. Join us!!!</p>
+            <hr class="divide-y divide-dashed">
+            <!-- radial progress section -->
+            <section class="flex flex-col lg:flex-row items-stretch justify-center mt-4">
+                <div>
+                    <div class="radial-progress text-[#FF4240] rotate-90" style="--value: 87;" role="progressbar"><span
+                            class="-rotate-90 text-black font-extrabold text-2xl">87%</span></div>
+                    <h1 class="text-xl font-semibold ">Prayer Facility</h1>
+                    <p class=" max-w-60 lg:max-w-64 mx-auto font-normal text-base color-text mb-6">Here we provide
+                        prayer facilities for the players. Join us!!</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#49D293] rotate-90" style="--value: 95;" role="progressbar"><span
+                            class="-rotate-90 text-black font-extrabold text-2xl">95%</span></div>
+                    <h1 class="text-xl font-semibold ">Experienced Coach</h1>
+                    <p class=" max-w-60 lg:max-w-64 mx-auto font-normal text-base color-text mb-6">Here we provide
+                        experienced coaches for the players.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#FFB546] rotate-90" style="--value: 90;" role="progressbar"><span
+                            class="-rotate-90 text-black font-extrabold text-2xl">90%</span></div>
+                    <h1 class="text-xl font-semibold ">Senior Player</h1>
+                    <p class=" max-w-60 lg:max-w-64 mx-auto font-normal text-base color-text mb-6">Here we have many
+                        senior players who contribute a lot in teaching the newcomers.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#4C8DF1] rotate-90" style="--value: 80;" role="progressbar"><span
+                            class="-rotate-90 text-black font-extrabold text-2xl">80%</span></div>
+                    <h1 class="text-xl font-semibold ">Training Ground</h1>
+                    <p class=" max-w-60 lg:max-w-64 mx-auto font-normal text-base color-text mb-6">Our training ground
+                        is famous for its compatibility with the players.</p>
+                </div>
+            </section>
+        </section>
+        <hr class="divide-y divide-dashed">
+        <!-- program section -->
+        <section class="text-center my-14">
+            <h1 class="text-4xl font-extrabold mb-6">Program Sections</h1>
+            <p class="max-w-72 lg:max-w-2xl mx-auto color-text mb-6">Welcome!!! Here we provide the following programs
+                for helping the newcomers. Have a great time here with us!!</p>
+        </section>
+        <hr class="divide-y divide-dashed">
+
+        <!-- types of programs section -->
+        <section class="mb-6">
+            <div class="mx-auto grid lg:grid-cols-2 gap-5 py-5">
+                <div class="hero max-w-lg max-h-80  rounded-2xl" style=" background-image: url('Images/2.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="hero-content text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mt-20 text-white text-3xl font-extrabold">Junior Program</h1>
+                            <p class="my-0 mb-8 max-w-lg max-h-20 mt-4">Bring your children for an exciting match and
+                                see if they are interested as try to make them enjoy to the fullest. Happy Hockeys!!!
+                            </p>
+                            <button
+                                class="btn border-0 text-xl font-bold rounded-lg inline-flex bg-color-primary text-white max-w-44 max-h-12">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero max-w-lg max-h-80  rounded-2xl" style=" background-image: url('Images/3.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="hero-content text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mt-20 text-white text-3xl font-extrabold">Teenager Program</h1>
+                            <p class="my-0 mb-8 max-w-lg max-h-20 mt-4">Bring your Teens for an exciting match to make
+                                them enjoy to the fullest. Here we provide teen friendly environment. Happy Hockeys!!!
+                            </p>
+                            <button
+                                class="btn border-0 text-xl font-bold rounded-lg inline-flex bg-color-primary text-white max-w-44 max-h-12">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero max-w-6xl max-h-80 rounded-2xl col-span-2"
+                    style="background-image: url('Images/4.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl "></div>
+                    <div class="hero-content text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mt-20  text-white text-3xl font-extrabold">Professional Program</h1>
+                            <p class="my-0 mb-8 max-w-lg max-h-20 mt-4">Join us for a friendly match with the
+                                Professionals.Happy Hockeys!</p>
+                            <button
+                                class="btn border-0 text-xl font-bold rounded-lg inline-flex bg-color-primary text-white max-w-44 max-h-12">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="divide-y divide-dashed">
+        <!-- new products section -->
+        <section class="text-center my-14">
+            <h1 class="text-4xl font-extrabold mb-6">Our New Products</h1>
+            <p class="max-w-72 lg:max-w-2xl mx-auto color-text mb-6">Welcome!!! Here we provide the following products
+                for helping the newcomers. Have a great time here with us!!</p>
+        </section>
+        <hr class="divide-y divide-dashed mb-8">
+        <!-- cards section  -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- 1st card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white ">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">World Cup Flags Football</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price-$22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee:Free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">World Cup Flags Football</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price-$22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee : Free</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 3rd card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">Cap for Hockeys</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price - $22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee : Free</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 4th card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">World Cup Flags Football</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price - $22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee : Free</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 5th card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">World Cup Flags Football</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price - $22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee : Free</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 6th card -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-xl rounded-2xl border bg-white">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-3">
+                                <img src="Images/Frame (3).png" alt="">
+                                <h6 class="text-base font-medium color-text">5.0</h6>
+                                <img src="Images/Frame (4).png" alt="">
+                                <h6 class="text-base font-medium color-text">20</h6>
+                                <img src="Images/Frame (5).png" alt="">
+                                <h6 class="text-base font-medium color-text">200</h6>
+                            </div>
+                            <h1 class="text-xl font-extrabold ">World Cup Flags Football</h1>
+                            <p class="py-4 text-base font-medium color-text">Take a look at our products and do buy them
+                                if you are Interested. Please Rate it!!. Happy Shopping.</p>
+                            <div class="flex gap-4 lg:gap-0">
+                                <h6 class="text-base font-extrabold color-span">Price - $22.00</h6>
+                                <img src="Images/Frame (2).png" alt="">
+                                <h6 class="text-base font-medium color-text">Delivery Fee : Free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="divide-y divide-dashed mt-8">
+
+        <!-- get in touch section -->
+       
+            <section class="text-center my-14">
+                <h1 class="text-4xl font-extrabold mb-6">Get In Touch</h1>
+                <p class="max-w-72 lg:max-w-2xl mx-auto color-text mb-6">Have a great time here with us!! If you have
+                    further queries please do contact us by providing some of the important contacts. Thank you.</p>
+            </section>
+            <hr class="divide-y divide-dashed mb-8">
+            <!-- contacts section  -->
+            <div class="flex">
+            <div class="max-w-sm max-h-full border rounded-2xl p-5">
+                <!-- 1st info -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-96 rounded-2xl border bg-[#BCED6D1A] mb-4">
+                    <div class="hero-content text-left">
+                        <div class="max-w-md">
+                            <img src="Images/Group 1171275317.png">
+                            <p class="text-base font-normal mt-2"><span class="color-text">Phone Number:</span> <br>
+                                (+62)
+                                123-321-543</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd info -->
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-96 rounded-2xl border bg-[#FDDD5F1A] mb-4">
+                    <div class="hero-content text-left">
+                        <div class="max-w-md">
+                            <img src="Images/Group 1171275318.png">
+                            <p class="text-base font-normal mt-2"><span class="color-text">Email:</span> <br>
+                                hockeys@support.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd info -->
+
+                <div class="hero max-h-full lg:max-h-56 max-w-96 lg:max-w-96 rounded-2xl border bg-[#629CF31A]">
+                    <div class="hero-content text-left">
+                        <div class="max-w-md">
+                            <img src="Images/Group 1171275321.png">
+                            <p class="text-base font-normal mt-2"><span class="color-text">Location:</span> <br>
+                                152/1 Mohakhali Wireless Gate</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- form section -->
+            <section>
+
+                <form>
+
+
+                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                        <div class="sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Your
+                                name</label>
+                            <div class="mt-2">
+                                <input placeholder="your name" type="text"
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+
+                        <div class="sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Your
+                                Email</label>
+                            <div class="mt-2">
+                                <input placeholder="email" type="email"
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label for="subject"
+                                class="block text-sm font-medium leading-6 text-gray-900">Subject</label>
+                            <div class="mt-2">
+                                <input placeholder="your Subject" type="text"
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label for="phone number"
+                                class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                            <div class="mt-2">
+                                <input placeholder="phone number" type="text"
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+
+                        
+                        <div class="sm:col-span-4">
+                            <label for="Message" class="block text-sm font-medium leading-6 text-gray-900">Your
+                                Message</label>
+                            <div class="mt-2">
+                                <input  placeholder="Message" type="text"
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <button class="btn border-0 text-sm font-bold rounded-lg inline-flex bg-color-primary text-white max-w-44 max-h-12">Send Message</button>
+
+                </form>
+            </section>
+        </div>
+
+        <!-- social media section -->
+
+        <section class="text-center p-6 my-14 bg-[#13131808]">
+            <h1 class="text-2xl font-extrabold mb-6">Social Media</h1>
+            <img class="mx-auto" src="Images/Social.png" alt="">
+
+        </section>
+
+
+
+    </main>
+    <footer
+        class="footer max-h-full lg:max-h-full max-w-96 lg:max-w-full p-4 lg:p-24 bg-black color-text text-base font-medium">
+        <nav class="mx-4">
+            <header class="footer-title text-[#FFFFFF] text-2xl font-extrabold">Get in Touch</header>
+            <p class="max-w-80 lg:max-w-96 max-h-20 lg:max-h-20 mb-4"> For more information get in touch with us via
+                mail or contact number. We are always there to answer any questions regardin anything related to our
+                website. Thank you! </p>
+            <div class="flex gap-3 mt-6"> <img src="Images/msg.png" alt="">
+                <h6>hockeys@support.com</h6>
+            </div>
+            <div class="flex gap-3"> <img src="Images/telephone.png" alt="">
+                <h6>(+62) 123-321-543</h6>
+            </div>
+
+        </nav>
+        <div class="grid grid-cols-2 lg:grid">
+            <nav class="mx-4">
+                <header class="footer-title text-[#FFFFFF] text-lg font-bold">Company</header>
+                <a class="link link-hover">About us</a><br>
+                <a class="link link-hover">Leadership</a><br>
+                <a class="link link-hover">Careers</a><br>
+                <a class="link link-hover">News & Articles</a><br>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav class="mx-4">
+                <header class="footer-title  text-[#FFFFFF] text-lg font-bold">Support</header>
+                <a class="link link-hover">Help Center</a><br>
+                <a class="link link-hover">FAQ</a><br>
+                <a class="link link-hover">Ticket Support</a><br>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
+        <nav class="mx-4">
+            <header class="footer-title  text-[#FFFFFF] text-lg font-bold">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adults</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
